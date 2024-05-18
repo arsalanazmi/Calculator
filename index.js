@@ -15,19 +15,19 @@ let answer = await inquirer.prompt([
     },
 ]);
 if (answer.operator === "Addition") {
-    let result = answer.firstNumber + answer.secondNumber;
+    let result = Number(answer.firstNumber) + Number(answer.secondNumber);
     console.log("Your value is: " + result);
 }
 else if (answer.operator === "Subtraction") {
-    let result = answer.firstNumber - answer.secondNumber;
+    let result = Number(answer.firstNumber) - Number(answer.secondNumber);
     console.log("Your value is: " + result);
 }
 else if (answer.operator === "Multiplication") {
-    let result = answer.firstNumber * answer.secondNumber;
+    let result = Number(answer.firstNumber) * Number(answer.secondNumber);
     console.log("Your value is: " + result);
 }
 else if (answer.operator === "Division") {
-    let result = answer.firstNumber / answer.secondNumber;
+    let result = Number(answer.firstNumber) / Number(answer.secondNumber);
     console.log("Your value is: " + result);
 }
 else {

@@ -1,9 +1,12 @@
 {
-  "name": "simple-commandline-calculator",
-  "version": "1.0.0",
+  "name": "@arsalanazmi92/calculator",
+  "version": "1.0.4",
   "description": "A simple command line calculator with TypeScipt, Node.js & Inquirer",
   "main": "index.js",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
